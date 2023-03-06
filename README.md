@@ -1,5 +1,3 @@
-Todos os meus trabalhos feitos nas aulas destas cadeiras para desenvolver o conhecimento de cada uma das linguagens.
-
 # **PM** [Programação de Microprocessadores]
 
   -Linguagem C
