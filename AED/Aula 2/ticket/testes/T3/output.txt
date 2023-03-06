@@ -1,0 +1,25 @@
+Parque sem carros.
+Entrada autorizada.
+Entrada autorizada.
+Entrada autorizada.
+Entrada autorizada.
+Entrada autorizada.
+Matricula: 14-ff-56
+Matricula: 45-78-hh
+Matricula: ff-45-67
+Matricula: 34-nn-99
+Matricula: 45-99-db
+Carro com matricula 45-78-hh deve pagar 8.75 euros.
+Matricula: 14-ff-56
+Matricula: ff-45-67
+Matricula: 34-nn-99
+Matricula: 45-99-db
+Carro com matricula 45-99-db deve pagar 10.25 euros.
+Matricula: 14-ff-56
+Matricula: ff-45-67
+Matricula: 34-nn-99
+Carro com matricula 14-ff-56 deve pagar 11.00 euros.
+Matricula: ff-45-67
+Matricula: 34-nn-99
+Dinheiro em caixa : 30.00 euros.
+2 carros no parque.

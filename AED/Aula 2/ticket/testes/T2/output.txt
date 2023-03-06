@@ -1,0 +1,16 @@
+Entrada autorizada.
+Carro com matricula 22-dg-33 deve pagar 1.50 euros.
+Entrada autorizada.
+Carro com matricula 33-ff-55 deve pagar 1.50 euros.
+Entrada autorizada.
+Carro com matricula 33-ff-55 deve pagar 2.50 euros.
+Entrada autorizada.
+Carro com matricula 33-ff-55 deve pagar 2.50 euros.
+Entrada autorizada.
+Carro com matricula 33-ff-55 deve pagar 4.25 euros.
+Entrada autorizada.
+Carro com matricula 33-ff-55 deve pagar 5.00 euros.
+Dinheiro em caixa : 17.25 euros.
+Parque sem carros.
+Dinheiro em caixa : 17.25 euros.
+0 carros no parque.

@@ -1,0 +1,12 @@
+Dinheiro em caixa : 0.00 euros.
+Parque sem carros.
+Comando invalido.
+Dados invalidos.
+Entrada autorizada.
+Carro nao existe no parque.
+Carro ja no parque.
+Carro nao existe no parque.
+Dinheiro em caixa : 0.00 euros.
+Matricula: 12-ad-23
+Dinheiro em caixa : 0.00 euros.
+1 carros no parque.
