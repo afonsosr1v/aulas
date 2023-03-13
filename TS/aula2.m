@@ -1,4 +1,6 @@
-%%aula 2
+%%%%%%%%%%%%%% AULA 2
+
+%% ex1
 
 function x=deg(a)
   x=1*(a>0);
@@ -17,7 +19,9 @@ signal = signal + 1*imp(timedomain-1) - 1*imp(timedomain-5);
 stem(timedomain, signal)
 title('Exemplo 1.a')
 xlabel('timedomain')
-ylabel('signal(timedomain')
+ylabel('signal(timedomain)')
+
+
 
 
 

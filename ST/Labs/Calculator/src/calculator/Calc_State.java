@@ -75,6 +75,9 @@ public class Calc_State {
             case '+':   // Calculate pending addition
                 first_pair.operand += new_operand;
                 break;
+            case '*':  // Calculaye pending multiplicatin
+                first_pair.operand *= new_operand;
+                break;
             case '=':
                 break;
             default:    // Error - operation not supported

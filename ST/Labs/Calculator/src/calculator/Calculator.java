@@ -13,7 +13,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author lflb@fct.unl.pt
+ * @author lflb@fct.unl.pt and ago.nobrega@campus.fct.unl.pt
  */
 public class Calculator extends javax.swing.JFrame {
 
@@ -40,10 +40,19 @@ public class Calculator extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
         jButtonC = new javax.swing.JButton();
         jButtonCE = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jButtonPlus = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
         jButtonEquals = new javax.swing.JButton();
         jButtonClear = new javax.swing.JButton();
         jToggleButtonFile = new javax.swing.JToggleButton();
@@ -59,7 +68,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.Y_AXIS));
 
-        jTextNumber.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        jTextNumber.setFont(new java.awt.Font("Comic Sans", 1, 24)); // NOI18N
         jTextNumber.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextNumber.setText("0");
         jTextNumber.setMaximumSize(new java.awt.Dimension(300, 38));
@@ -84,6 +93,70 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
+
+        jButton3.setText("3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+
+        jButton4.setText("4");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+
+        jButton5.setText("5");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+
+        jButton6.setText("6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton6);
+
+        jButton7.setText("7");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7);
+
+        jButton8.setText("8");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton8);
+
+        jButton9.setText("9");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton9);
+
+        jButton10.setText("0");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton10);
 
         jButtonC.setForeground(new java.awt.Color(255, 70, 70));
         jButtonC.setText("C");
@@ -115,6 +188,14 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButtonPlus);
+
+        jButton11.setText("*");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton11);
 
         jButtonEquals.setText("=");
         jButtonEquals.addActionListener(new java.awt.event.ActionListener() {
@@ -236,6 +317,43 @@ public class Calculator extends javax.swing.JFrame {
         // Main window is closing - close file if it is open
         stop_writing_to_file();
     }//GEN-LAST:event_formWindowClosing
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       handle_digit("3");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        handle_digit("4");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        handle_digit("5");
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        handle_digit("6");
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        handle_digit("7");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        handle_digit("8");
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        handle_digit("9");
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        handle_digit("0");
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        calc_number(jTextNumber.getText(), '*');
+        first_digit= true;
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     /** 
      * Write text to the log text area, the command line and the file, if set
@@ -372,7 +490,16 @@ public class Calculator extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonC;
     private javax.swing.JButton jButtonCE;
     private javax.swing.JButton jButtonClear;
