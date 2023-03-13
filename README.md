@@ -22,6 +22,10 @@
 # **ST** [Sistemas de Telecomunicações]
 
   -Java
+  
+# **TS** [Teoria de Sinais]
+
+  -Octave GNU // MatLab
 
 
 
