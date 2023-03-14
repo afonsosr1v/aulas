@@ -13,7 +13,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author lflb@fct.unl.pt and ago.nobrega@campus.fct.unl.pt
+ * @author lflb@fct.unl.pt && nobrega
  */
 public class Calculator extends javax.swing.JFrame {
 
@@ -36,6 +36,7 @@ public class Calculator extends javax.swing.JFrame {
     private void initComponents() {
 
         jFileChooser1 = new javax.swing.JFileChooser();
+        jLabel1 = new javax.swing.JLabel();
         jTextNumber = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -68,7 +69,16 @@ public class Calculator extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.Y_AXIS));
 
-        jTextNumber.setFont(new java.awt.Font("Comic Sans", 1, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(102, 102, 102));
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Calculadora");
+        jLabel1.setAlignmentX(0.5F);
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jLabel1);
+
+        jTextNumber.setFont(new java.awt.Font("Monocraft", 1, 24)); // NOI18N
         jTextNumber.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextNumber.setText("0");
         jTextNumber.setMaximumSize(new java.awt.Dimension(300, 38));
@@ -78,6 +88,7 @@ public class Calculator extends javax.swing.JFrame {
         jPanel1.setMaximumSize(new java.awt.Dimension(210, 116));
         jPanel1.setLayout(new java.awt.GridLayout(4, 3));
 
+        jButton1.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,6 +97,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1);
 
+        jButton2.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton2.setText("2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +106,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
 
+        jButton3.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +115,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3);
 
+        jButton4.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,6 +124,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4);
 
+        jButton5.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton5.setText("5");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,6 +133,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton5);
 
+        jButton6.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton6.setText("6");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +142,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton6);
 
+        jButton7.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton7.setText("7");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +151,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton7);
 
+        jButton8.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton8.setText("8");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,6 +160,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton8);
 
+        jButton9.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton9.setText("9");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +169,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton9);
 
+        jButton10.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton10.setText("0");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,6 +178,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButton10);
 
+        jButtonC.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButtonC.setForeground(new java.awt.Color(255, 70, 70));
         jButtonC.setText("C");
         jButtonC.addActionListener(new java.awt.event.ActionListener() {
@@ -167,6 +188,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel1.add(jButtonC);
 
+        jButtonCE.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButtonCE.setForeground(new java.awt.Color(255, 70, 70));
         jButtonCE.setText("CE");
         jButtonCE.addActionListener(new java.awt.event.ActionListener() {
@@ -181,6 +203,7 @@ public class Calculator extends javax.swing.JFrame {
         jPanel2.setMaximumSize(new java.awt.Dimension(210, 60));
         jPanel2.setLayout(new java.awt.GridLayout(2, 3));
 
+        jButtonPlus.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButtonPlus.setText("+");
         jButtonPlus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -189,6 +212,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonPlus);
 
+        jButton11.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButton11.setText("*");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -197,6 +221,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel2.add(jButton11);
 
+        jButtonEquals.setFont(new java.awt.Font("Monocraft", 0, 18)); // NOI18N
         jButtonEquals.setText("=");
         jButtonEquals.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,6 +230,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonEquals);
 
+        jButtonClear.setFont(new java.awt.Font("Monocraft", 0, 10)); // NOI18N
         jButtonClear.setText("Clear");
         jButtonClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,7 +239,7 @@ public class Calculator extends javax.swing.JFrame {
         });
         jPanel2.add(jButtonClear);
 
-        jToggleButtonFile.setFont(new java.awt.Font("Arial", 0, 15)); // NOI18N
+        jToggleButtonFile.setFont(new java.awt.Font("Monocraft", 0, 10)); // NOI18N
         jToggleButtonFile.setForeground(new java.awt.Color(28, 76, 131));
         jToggleButtonFile.setText("ToFile");
         jToggleButtonFile.addActionListener(new java.awt.event.ActionListener() {
@@ -226,6 +252,7 @@ public class Calculator extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Monocraft", 0, 12)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -506,6 +533,7 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButtonEquals;
     private javax.swing.JButton jButtonPlus;
     private javax.swing.JFileChooser jFileChooser1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

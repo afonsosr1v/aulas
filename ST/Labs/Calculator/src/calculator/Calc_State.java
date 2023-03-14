@@ -6,7 +6,7 @@ package calculator;
 
 /**
  *
- * @author lflb@fct.unl.pt
+ * @author lflb@fct.unl.pt   &&   nobrega
  */
 public class Calc_State {
 
@@ -39,6 +39,10 @@ public class Calc_State {
      */
     public Calc_State() {
         first_pair = new Pair();
+        buffer_A = new Pair();
+        buffer_B = new Pair();
+        buffer_C = new Pair();
+        buffer_Flag = new Pair();
     }
 
     public char last_operation() {
@@ -67,7 +71,46 @@ public class Calc_State {
      * @return true if success; false if error
      */
     public boolean execute_or_push_operation(long new_operand, char new_operation) {
-        // First, checks what to do with the operand
+        
+        if(first_pair.operation == '+' && new_operation == '*' && buffer_Flag.operand == 0){
+            buffer_A.operation = first_pair.operation;
+            buffer_A.operand = first_pair.operand;
+            buffer_B.operation = new_operation;
+            buffer_B.operand = new_operand;
+            buffer_Flag.operand = 1;
+            first_pair.reset();
+            
+            return true;
+        }    
+        
+        if(buffer_Flag.operand == 1){
+            if(new_operation=='='){
+                buffer_C.operation = new_operation;
+                buffer_C.operand = new_operand;
+                
+                first_pair.operand = buffer_B.operand * buffer_C.operand;
+                first_pair.operand +=  buffer_A.operand;
+                first_pair.operation = '=';
+                
+                buffer_A.reset();
+                buffer_B.reset();
+                buffer_C.reset();
+                buffer_Flag.reset();
+                
+                return true;
+                
+            } else {
+                buffer_C.operand = new_operand;
+                buffer_C.operation = new_operation;
+                
+                buffer_B.operand *= buffer_C.operand;
+                buffer_B.operation = buffer_C.operation;
+                first_pair.reset();
+                buffer_C.reset();
+                
+                return true;
+            }
+        } else {
         switch (first_pair.operation) {
             case IDLE_OPERATION: // First operand
                 first_pair.operand = new_operand;
@@ -85,10 +128,16 @@ public class Calc_State {
                 return false;
         }
         // After, memorizes pending operation
-        first_pair.operation = new_operation;
+        first_pair.operation = new_operation;    
+        }
         return true;
     }
-
     // Class local variables
     private final Pair first_pair;
+    private final Pair buffer_A;
+    private final Pair buffer_B;
+    private final Pair buffer_C;
+    private final Pair buffer_Flag;
+    
+    
 }
